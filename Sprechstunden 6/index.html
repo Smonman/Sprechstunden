@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Sprechstunden</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="ajax.js"></script>
+	</head>
+	<body onload="ajax()">
+		<div class="searchcontainer">
+			<div class="form-section">
+				<div class="form-group">
+					<label for="name">Suche:</label>
+					<input class="form-control" aria-describedby="nameHelp" id="name" type="text" />
+					<small id="nameHelp" class="form-text text-muted">zB: Nachname, Vorname, Wochentag oder Anfang der Sprechstunde</small>
+				</div>
+			</div>
+		</div>
+		<div id="display">
+		</div>
+	</body>
+</html>
